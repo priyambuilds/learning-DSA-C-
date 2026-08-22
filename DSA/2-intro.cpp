@@ -42,9 +42,33 @@
 //     }
 // }
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main () {
+// int main () {
+//     long long n, m;
+//     cin >> n >> m;
+//     cout << n << " + " << m << " = " << (n + m) << "\n";
+//     cout << n << " - " << m << " = " << (n - m) << "\n";
+//     cout << n << " * " << m << " = " << (n * m) << "\n";
+//     cout << n << " / " << m << " = " << (n / m) << "\n";
+//     cout << n << " % " << m << " = " << (n % m) << "\n";
+// }
 
-}
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     int a, b;
+//     cin >> a >> b;
+//     cout << a % 10 + b % 10;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     int a;
+//     cin >> a;
+//     a % 2 ? cout<<"Odd" : cout<<"Even";
+// }
