@@ -86,12 +86,38 @@
 //     cout << sum;
 // }
 
+
+// int main () {
+    //     long long a;
+    //     cin >> a;
+    //     long long sum = a*(a+1)/2;
+    //     cout << sum;
+    // }
+
+
 #include<iostream>
 using namespace std;
+// int main () {
+//     int n;
+//     cin >> n;
+//     long long sum = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         sum *= i;
+//     }
+//     cout << sum;
+// }
 
-int main () {
-    long long a;
-    cin >> a;
-    long long sum = a*(a+1)/2;
-    cout << sum;
-}
+// int main () {
+//     long long x, y;
+//     cin >> x >> y;
+//     long long result = 1;
+//     for (int i = 1; i <= y; i++)
+//     {
+//         result *= x;
+//     }
+//     cout << result;
+// }
+
+#include<iostream>
+using namespace std;
