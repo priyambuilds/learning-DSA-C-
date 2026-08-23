@@ -41,3 +41,30 @@ const Sort = (arr) => {
     return console.log(`${pos}, ${neg}, ${eve}, ${odd}`)
 }
 Sort(arr)
+
+let n = 1238293
+const rev = (n) => {
+    let rev = String(n).split('').reverse().join('')
+    console.log(rev)
+}
+rev(n)
+
+let n = 12345
+const rev = (n) => { 
+    let rev = 0
+    for (let i = String(n).length; i > 0; i--) {
+        let digit = n % 10
+        n = Number(String(n).slice(0, i - 1))
+        rev = rev * 10 + digit
+    }
+    return (rev)
+}
+rev(n)
+
+let n = 4
+let m = 5
+const char = (n, m) => {
+    for (let i = 1; i <= n; i++) {
+        for(let j = )
+    }
+}
