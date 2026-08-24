@@ -341,17 +341,41 @@ using namespace std;
 //     }
 // }
 
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     int n;
+//     cin >> n;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         int start;
+//         i % 2 == 1 ? start = 0 : start = 1;
+//         cout << start;
+//         for (int j = 2; j <= i; j++)
+//         {
+//             start == 0 ? start = 1 : start = 0;
+//             cout << start;
+//         }
+//         cout << endl;
+//     }
+// }
+
 #include<iostream>
 using namespace std;
 
 int main () {
     int n;
     cin >> n;
-    for (int i = 1; i <= n; i++)
-    {
-        i % 2 == 1 ? cout << 0 : cout << 1;
-        for (int j = 2; j <= i; j++) {
-            i % 2 == 0 ? cout << 0 : cout << 1;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    for (int i = n-1; i >=1; i--) {
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
         }
         cout << endl;
     }
