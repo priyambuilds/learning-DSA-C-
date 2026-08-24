@@ -203,21 +203,21 @@
 // using namespace std;
 
 // int main () {
-    //     int n;
-    //     cin >> n;
-    //     for (int i = 1; i <= n; i++)
-    //     {
-        //         for (int j = 1; j <= n; j++) {
-            //             if(i == 1 || j ==1 || i ==n || j==n) {
-                //                 cout << "*";
-                //             }
-                //             else {
-                    //                 cout << " ";
-                    //             }
-                    //         }
-                    //         cout << endl;
-                    //     }
-                    // }
+//         int n;
+//         cin >> n;
+//         for (int i = 1; i <= n; i++)
+//         {
+//                 for (int j = 1; j <= n; j++) {
+//                         if(i == 1 || j ==1 || i ==n || j==n) {
+//                                 cout << "*";
+//                             }
+//                             else {
+//                                     cout << " ";
+//                                 }
+//                             }
+//                             cout << endl;
+//                         }
+//                     }
                     
                     
 // #include<iostream>
@@ -253,5 +253,174 @@
 //     }
 //     }
 
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin>>n;
+//     for (size_t i = 1; i <= n; i++)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             cout << "*";
+//             if(j<i) {
+//                 cout<<" ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin>>n;
+//     for (size_t i = 1; i <= n; i++)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             if(j==1 || j==i || i==n) {
+//                 cout << "* ";
+//             } else {
+//                 cout << "  ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin>>n;
+//     for (size_t i = n; i >=1; i--)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             if(j==1 || j==i || i==n) {
+//                 cout << "* ";
+//             } else {
+//                 cout << "  ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin>>n;
+//     for (size_t i = 1; i <= n; i++)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+//     for (size_t i = n-1; i >= 1; i--)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             cout << "* ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin>>n;
+//     for (size_t i = 1; i <= n; i++)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             if (j==1 || j==i) {
+//                 cout << "* ";
+//             }
+//             else{
+//                 cout << "  ";
+//             }
+//         }
+//         cout << endl;
+//     }
+//     for (size_t i = n-1; i >= 1; i--)
+//     {
+//         cout << string(n - i, ' ');
+//         for (size_t j = 1; j <= i; j++)
+//         {
+//             if (j == 1 || j==i) {
+//                 cout << "* ";
+//             }
+//             else{
+//                 cout << "  ";
+//             }
+//         }
+//         cout << endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin >> n;
+//     for (size_t i = 1; i <= n; i++) {
+//         cout << string(i, '*') << string(n*2 - i * 2, ' ') << string(i, '*') << endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin >> n;
+//     for (size_t i = 1; i <= n; i++) {
+//         cout<<string(i, '*')<<string(n*2-i*2, ' ')<<string(i, '*')<<endl;
+//     }
+//     for (size_t i = n-1; i >= 1; i--) {
+//         cout<<string(i, '*')<<string(n*2-i*2, ' ')<<string(i, '*')<<endl;
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main () {
+//     size_t n;
+//     cin >> n;
+//     for (size_t i = n; i >=1; i--) {
+//         cout << string(i, '*') << string(n*2-i*2+1, ' ')<<string(i, '*')<<endl;
+//     }
+//     for (size_t i = 2; i <= n; i++) {
+//         cout << string(i, '*') << string(n*2-i*2+1, ' ')<<string(i, '*')<<endl;
+//     }
+// }
+
 #include<iostream>
 using namespace std;
+
+int main () {
+    char c;
+    cin >> c;
+    c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ? cout<<"Yes" : cout<<"No";
+}
