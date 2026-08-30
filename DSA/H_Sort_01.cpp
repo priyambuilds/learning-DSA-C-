@@ -1,34 +1,36 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void solve() {
-    int n;
-    cin>>n;
-    int arr[n];
-    int c0 = 0, c1 = 0;
-    for (int i = 0; i < n; i++) {
+int test() {
+    int b;
+    cin>>b;
+    int arr[b];
+    for (int i = 0; i < b; i++)
+    {
         cin>>arr[i];
-        if(arr[i] == 0) {
-            c0++;
-        } else c1++;
     }
-    for (int i = 0; i < c0; i++) {
-        arr[i] = 0;
+    int zero = 0;
+    int one = 0;
+    for (int i = 0; i < b; i++)
+    {
+        if(arr[i] ==0) zero++; else one++;
     }
-    for (int i = c0 ; i < n; i++) {
-        arr[i] = 1;
+    for (int i = 0; i < zero; i++)
+    {
+        cout<<0<<" ";
     }
-
-    for (int i = 0; i < n; i++) {
-        cout<<arr[i]<< " ";
+    for (int i = 0; i < one; i++)
+    {
+        cout<<1<<" ";
     }
-    cout << endl;
+    cout<<endl;
 }
 
-int main () {
+int main()
+{
     int t;
-    cin >> t;
+    cin>>t;
     while(t--) {
-        solve();
+        test();
     }
 }
