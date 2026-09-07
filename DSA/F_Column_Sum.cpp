@@ -21,8 +21,5 @@ int main()
             sum += arr[j][i];
         }
         cout<<sum<<" ";
-        
     }
 }
-
- 

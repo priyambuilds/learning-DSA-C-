@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 using namespace std;
 
@@ -20,13 +22,14 @@ int main()
         int count = 0;
         for (int j = 0; j < m; j++)
         {
-            if(arr[i][j] == 1) count++;
-        }
-        if(count > maxCount) {
-            maxCount = count; 
-            ans = i;
+            if(arr[i][j] == 1) {
+                count ++;
+            }
+            if(maxCount < count) {
+                maxCount = count;
+                ans = i;
+            }
         }
     }
     cout<<ans;
-
 }

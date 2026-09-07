@@ -21,5 +21,5 @@ int main()
             if(max < arr[i][j]) max = arr[i][j];
         }
     }
-    cout << max;
+    cout<<max;
 }

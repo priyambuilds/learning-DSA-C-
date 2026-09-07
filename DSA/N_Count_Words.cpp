@@ -12,5 +12,4 @@ int main()
         if(str[i]==' ') space++;
     }
     cout<<space+1;
-    
 }

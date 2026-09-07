@@ -6,10 +6,10 @@ int main()
     string str;
     char a,b;
     cin>>str>>a>>b;
-    int size = str.size();
-    for (int i = 0; i < size; i++)
+    int len = str.size();
+    for (int i = 0; i < len; i++)
     {
-        if(str[i]==a) str[i]=b;
+        if(str[i]==a) str[i] = b;
     }
     cout<<str;
     

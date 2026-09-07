@@ -13,13 +13,15 @@ int main()
             cin>>arr[i][j];
         }
     }
-    bool contains = false;
+    int target = x;
+    bool check = false;
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
         {
-            if(x==arr[i][j]) contains = true;
+            if(arr[i][j] == x) check = true;
         }
     }
-    if(contains) cout<<"true"; else cout<<"false";
+    if(check) cout<<"true"; else cout<<"false";
 }
+

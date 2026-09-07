@@ -10,12 +10,13 @@ int main()
     int write_index = 0;
     for (int i = 0; i < size; i++)
     {
-        if(str[i] !=a) {
+        if(str[i]!=a) {
             str[write_index] = str[i];
             write_index++;
-        }
+        } 
     }
     str.resize(write_index);
     cout<<str;
+    
     
 }
