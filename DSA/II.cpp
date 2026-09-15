@@ -3,13 +3,28 @@ using namespace std;
 
 int main()
 {
-    string a;
+    int a;
     cin>>a;
-    int sum = 0;
-    for (int i = 0; i < a.size(); i++)
+    string arr1[a];
+    for (int i = 0; i < a; i++)
     {
-        sum += a[i] - 48;
+        cin>>arr1[i];
     }
-    
-    cout<<sum<<endl;
+    int b;
+    cin>>b;
+    string arr2[b];
+    for (int i = 0; i < b; i++)
+    {
+        cin>>arr2[i];
+    }
+    for (int i = 0; i < a; i++)
+    {
+        string ans = arr1[i];
+        bool check = false;
+        for (int j = 0; j < b; j++)
+        {
+            if(ans == arr2[j]) check = true;
+        }
+        if(!check) cout<<arr1[i]<<endl;
+    }
 }
