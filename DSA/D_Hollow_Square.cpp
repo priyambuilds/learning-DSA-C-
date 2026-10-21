@@ -3,15 +3,19 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cin>>n;
-    for (int i = 1; i <=n; i++)
+  int a;
+  cin>>a;
+  for (int i = 0; i < a; i++)
+  {
+    for (int j = 0; j < a; j++)
     {
-        for (int j = 1; j <= n; j++)
-        {
-            if(i==1 || i==n || j==1 || j==n) cout<<"*"; else cout<<" ";
-        }
-        cout<<endl;
+      if (j==0 | j==a-1 | i == 0 | i == a-1)
+      {
+        cout<<"*";
+      } else {
+        cout<<" ";
+      }
     }
-
+    cout<<endl;
+  }
 }

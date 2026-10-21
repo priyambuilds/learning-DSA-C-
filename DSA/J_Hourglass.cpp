@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int a;
+  cin>>a;
+  for (int i = a; i >= 1; i--)
+  {
+    for (int j = 0; j <=a-i; j++)
+    {
+      cout<<" ";
+    }
+    for (int j = i; j >0; j--)
+    {
+      cout<<". ";
+    }
+    cout<<endl;
+  }
+  for (int i = 2; i <=a; i++)
+  {
+    for (int j = a-i; j >=0; j--)
+    {
+      cout<<" ";
+    }
+    for (int j = 0; j <i; j++)
+    {
+      cout<<". ";
+    }
+    cout<<endl;
+  }
+}

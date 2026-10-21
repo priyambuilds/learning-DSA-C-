@@ -1,18 +1,23 @@
 #include <iostream>
-#include<string>
 using namespace std;
 
 int main()
 {
-    int n;
-    cin>>n;
-    int rev = n%10;
-    n = n / 10;
-    string len = to_string(n);
-    for (int i = 0; i < len.length(); i++)
-    {
-        rev = rev*10+n%10;
-        n = n/10;
-    }
-    cout<<rev;
+  int a;
+  cin >> a;
+  int temp = a;
+  int len = 0;
+  while (temp > 0)
+  {
+    temp /= 10;
+    len++;
+  }
+  int rev = 0;
+  for (int i = 0; i < len; i++)
+  {
+    int digit = a % 10;
+    a /= 10;
+    rev = rev * 10 + digit;
+  }
+  cout << rev;
 }
