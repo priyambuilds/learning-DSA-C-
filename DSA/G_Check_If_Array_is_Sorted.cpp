@@ -1,25 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int sort(int a, int arr[]) {
-    for (int i = 1; i < a; i++)
-    {
-        if(arr[i-1] > arr[i]) return false;
-    }
-    return true;
-}
-
 int main()
 {
-    int a;
-    cin>>a;
-    int arr[a];
-    for (int i = 0; i < a; i++)
+  int n;
+  cin>>n;
+  int A[n];
+  for (int i = 0; i < n; i++)
+  {
+    cin >> A[i];
+  }
+  int min = A[0];
+  for (int i = 0; i < n; i++)
+  {
+    if (min > A[i])
     {
-        cin>>arr[i];
+      cout << "NO";
+      return 0;
     }
-    if(sort(a, arr))
-        cout << "YES";
-     else
-        cout << "NO";
+  }
+  cout << "YES";
 }
