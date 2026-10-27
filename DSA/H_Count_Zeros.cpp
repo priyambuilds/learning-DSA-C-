@@ -1,22 +1,20 @@
 #include <iostream>
-#include<string>
 using namespace std;
 
-int countZeros(int n) {
-    int count = 0;
-    string len = to_string(n);
-    for (int i = 0; i < len.length(); i++)
-    {
-        if(n%10==0) count++;
-        n=n/10;
-    }
-    cout<<count;
-    
+void findZero (int a) {
+  int count = 0;
+  if(a==0) count++;
+  while(a) {
+    int ans = a%10;
+    if(ans==0) count++;
+    a/=10;
+  }
+  cout<<count;
 }
 
 int main()
 {
-    int a;
-    cin>>a;
-    countZeros(a);
+  int a;
+  cin>>a;
+  findZero(a);
 }

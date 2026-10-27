@@ -3,22 +3,22 @@ using namespace std;
 
 int main()
 {
-  int n;
-  cin >> n;
-  int arr[n];
-  int min = arr[0];
-  for (int i = 0; i < n; i++)
+  int a;
+  cin >> a;
+  int arr[a];
+  for (int i = 0; i < a; i++)
   {
     cin >> arr[i];
   }
+  int min = arr[0];
   int index = 0;
-  for (int i =0; i < n; i++)
+  for (int i = 1; i < a; i++)
   {
-    if (min > arr[i])
+    if (arr[i] < min)
     {
       min = arr[i];
       index = i+1;
-    }
+    };
   }
   cout << min << " " << index;
 }

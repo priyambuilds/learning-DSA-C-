@@ -2,23 +2,22 @@
 using namespace std;
 
 void test () {
-    int a;
-    cin>>a;
-    int arr[a];
-    for (int i = 0; i < a; i++)
-    {
-        cin>>arr[i];
-    }
-    for (int i = 1; i < a; i+=2)
-    {
-        swap(arr[i], arr[i-1]);
-    }
-    for (int i = 0; i < a; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
-    
-    cout<<endl;
+  int n;
+  cin>>n;
+  int A[n];
+  for (int i = 0; i < n; i++)
+  {
+    cin>>A[i];
+  }
+  for (int i = 0; i+1 < n; i+=2)
+  {
+    swap(A[i], A[i+1]);
+  }
+  for (int i = 0; i <n; i++)
+  {
+    cout<<A[i]<<" ";
+  }
+  cout<<endl;
 }
 
 int main()

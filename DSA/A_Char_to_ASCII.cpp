@@ -5,5 +5,5 @@ int main()
 {
     char ch;
     cin>>ch;
-    cout<<(int)ch <<endl;
+    cout<<(int)ch<<endl;
 }

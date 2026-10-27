@@ -1,19 +1,23 @@
 #include <iostream>
 using namespace std;
 
-unsigned long long findFact(int n) {
-    if(n<0) return 0;
-    unsigned long long sum = 1;
-    for (unsigned int i = 2; i <= static_cast<unsigned int>(n); i++) {
-        sum *= i;
-    }
-    return sum;
+int fact (int n) {
+  int ans = 1;
+  for (int i = 1; i <= n; i++)
+  {
+    ans+=i;
+  }
+  return ans;
+}
+
+void ncr(int n, int r) {
+  int ans = fact(n)/fact(r)*fact(n-r);
+  cout<<ans;
 }
 
 int main()
 {
-    int a, b;
-    cin>>a>>b;
-    
-    cout<<findFact(a)/((findFact(b))*(findFact(a-b)));
+  int n, r;
+  cin>>n>>r;
+  ncr(n,r);
 }

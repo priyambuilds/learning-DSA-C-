@@ -3,21 +3,20 @@ using namespace std;
 
 int main()
 {
-  int n;
-  cin>>n;
-  int x;
-  cin>>x;
-  int A[n];
-  for (int i = 0; i < n; i++)
+  int a, b;
+  cin >> a >> b;
+  int arr[a];
+  for (int i = 0; i < a; i++)
   {
-    cin>>A[i];
+    cin >> arr[i];
   }
-  for (int i = 0; i < n; i++)
+  for (int i = 0; i < a; i++)
   {
-    if(x==A[i]) {
-      cout<<"YES";
+    if (b == arr[i])
+    {
+      cout << "YES";
       return 0;
     }
   }
-  cout<<"NO";
+  cout << "NO";
 }

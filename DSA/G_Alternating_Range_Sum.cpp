@@ -24,7 +24,7 @@ int main()
   long long sum = 0;
   for (int i = 0; i < n; i++)
   {
-    sum +=A[i];
+    if(i%2!=0)sum +=A[i];
     Q[i] = sum;
   }
   while(q--) {

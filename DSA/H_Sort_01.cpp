@@ -1,31 +1,14 @@
 #include <iostream>
 using namespace std;
 
-void test()
+void test(int a)
 {
-  int n;
-
-  cin >> n;
-  int A[n];
-  for (int i = 0; i < n; i++)
+  
+  int zero = 
+  for (int i = 0; i < a; i++)
   {
-    cin >> A[i];
+    
   }
-  int zero = 0;
-  int one = 0;
-  for (int i = 0; i < n; i++)
-  {
-    A[i] == 0 ? zero++ : one++;
-  }
-  for (int i = 0; i < zero; i++)
-  {
-    cout<<0<<" ";
-  }
-  for (int i = 0; i < one; i++)
-  {
-    cout<<1<<" ";
-  }
-  cout<<endl;
 }
 
 int main()
@@ -34,6 +17,6 @@ int main()
   cin >> t;
   while (t--)
   {
-    test();
+    test(t);
   }
 }
